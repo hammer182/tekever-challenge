@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     kubernetesDeploy(configs: "deployment-tekever-challenge.yml", kubeconfigId: "kubernetes")
-                    kubernetesDeploy(configs: "statefulset-sistema-noticias.yml", kubeconfigId: "kubernetes")
+                    kubernetesDeploy(configs: "statefulset-tekever-challenge.yml", kubeconfigId: "kubernetes")
                     kubernetesDeploy(configs: "svc-tekever-challenge.yml", kubeconfigId: "kubernetes")
                 }
             }
