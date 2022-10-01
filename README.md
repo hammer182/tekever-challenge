@@ -16,3 +16,21 @@ I created an S3 bucket, hosted zone and IAM User. Terraform was the tool used to
 ```
 This API is pretty simple, you can simple access it or access using /user/?user=
 ```
+
+# Run Locally
+## Using Docker
+```
+docker run -d -p 5000:5000 --name tekever_challenge tekever challenge
+```
+or
+```
+docker compose up
+```
+## Using VSCode for Windows 
+```
+py -3 -m venv .venv
+.venv\scripts\activate
+python -m pip install --upgrade pip
+python -m pip install flask
+python -m flask run
+```

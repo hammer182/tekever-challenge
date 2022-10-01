@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  challenge:
+    image: maarcoalr/tekever_challenge:latest
+    container_name: tekever_chalenge
+    ports:
+      - "5000:5000"
