@@ -10,7 +10,7 @@ pipeline {
     stages{
         stage('Fetch code') {
             steps {
-                git branch: 'main', url: 'https://github.com/hammer182/tekever_challenge.git'
+                git branch: 'main', url: 'https://github.com/hammer182/tekever-challenge'
             }
         }
 
