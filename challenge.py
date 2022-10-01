@@ -14,7 +14,7 @@ def home_page():
 def request_page():
     user_query = str(request.args.get('user')) # /user/?user=TEST
     
-    if user_query == 'tekever':
+    if user_query.lower() == 'tekever':
         data_set ={'Page': 'Request', 'Message': "Hi Tekever, I really enjoied doing this challenge. What's the next step?", 'Timestamp':time.time()}
     else:
         data_set ={'Page': 'Request', 'Message': f'Successfully got the request for {user_query}', 'Timestamp':time.time()}
@@ -24,4 +24,4 @@ def request_page():
     return json_dump
 
 if __name__ == '__main__':
-    app.run(port=666)
+    app.run(port=5000)
