@@ -30,7 +30,7 @@ variable "PUB_KEY" {
 }
 
 variable "PRIV_KEY" {
-  default = "tekever-challenge"
+  default = "tekever-challenge.pem"
 }
 
 variable "MY_IP" {
