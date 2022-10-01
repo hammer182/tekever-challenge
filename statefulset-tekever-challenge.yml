@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: tekever-challenge-statefulset
+spec:
+  selector:
+    matchLabels:
+      app: tekever-challenge
+  serviceName: svc-tekever-challenge
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tekever-challenge
+      name: tekever-challenge
+    spec:
+      containers:
+      - name: tekever-challenge-container
+        image: maarcoalr/tekever_challenge:latest
+        ports:
+        - containerPort: 5000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 5000
+          periodSeconds: 10
+          failureThreshold: 3
+          initialDelaySeconds: 20

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tekever-challenge-deployment
+spec:
+  selector:
+    matchLabels:
+      app: tekever-challenge
+  template:
+    metadata:
+      labels:
+        app: tekever-challenge
+    spec:
+      containers:
+      - name: tekever-challenge
+        image: maarcoalr/tekever_challenge:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
