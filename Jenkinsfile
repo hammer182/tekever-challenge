@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-
+        
         stage('Push image to DockerHub') {
             environment {
                 registryCredential = 'dockerhub'    
