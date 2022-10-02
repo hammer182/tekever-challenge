@@ -46,15 +46,14 @@ python -m flask run
 ```
 
 # Resources, approach and difficulties
-## 1. 
-When I turned on my computer after getting the email with the challenge, I saw an automatic Windows update. I start the project but several unusual errors were occurring, GitBash was not working properly and it was not possible to run virtual machines using Vagrant. Some Youtube videos helped me to restore normality.
+ 
+1. When I turned on my computer after getting the email with the challenge, I saw an automatic Windows update. I start the project but several unusual errors were occurring, GitBash was not working properly and it was not possible to run virtual machines using Vagrant. Some Youtube videos helped me to restore normality.
 
-## 2. 
-The official documentation for Docker, Kubernetes, Terraform, Jenkins and AWS are great resouces.
+2. The official documentation for Docker, Kubernetes, Terraform, Jenkins and AWS are great resouces.
 
-## 3. 
-I was unable to run the cluster application over HTTPS, but I am researching how to do so in future projects.
+3. I was unable to run the cluster application over HTTPS, but I am researching how to do so in future projects.
 
-## 4. 
-Jenkins no longer offers the Kubernetes Continuous Deployment plugin.
+4. Jenkins no longer offers the Kubernetes Continuous Deployment plugin.
 I was able to use it after finding it online, but later on I learned that it had been suspended because of unresolved security issues. I'm looking for safer alternatives looking forward future implementations. 
+
+5. Given that CI/CD implementation was the main foccus, the API created is *very* simple. However, now I'm really excited about Python programming again and have already started another API project.
