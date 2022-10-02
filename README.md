@@ -12,10 +12,8 @@ I created an S3 bucket, hosted zone and IAM User manually. Terraform was the too
 ![Flowchart](https://i.imgur.com/OKXxTdm.png)
 
 ## Using the API
-This is a pretty simple API, developed using Python Flask
-```
-Access directly or using /user/?user=SOMEARGUMENT (ex: /user/?user=tekever)
-```
+This is a pretty simple API, developed using Python Flask. 
+Access [directly](http://challenge.tekever.maarcoalr.co:5000) or [using /user/?user=SOMEARGUMENT (ex: /user/?user=maarcoalr)](http://challenge.tekever.maarcoalr.co:5000/user/?user=tekever)
 
 # Run Locally
 Clone this repo to your local machine and use the method of your choice:
